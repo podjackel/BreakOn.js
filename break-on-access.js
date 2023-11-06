@@ -1,4 +1,9 @@
-function breakOn(obj, propertyName, mode, func) {
+/*
+Modified version: https://github.com/podjackel/BreakOn.js/edit/master/break-on-access.js
+Original code: https://github.com/paulirish/break-on-access
+*/
+
+breakOn = function(obj, propertyName, mode, func) {
     // this is directly from https://github.com/paulmillr/es6-shim
     function getPropertyDescriptor(obj, name) {
         var property = Object.getOwnPropertyDescriptor(obj, name);
